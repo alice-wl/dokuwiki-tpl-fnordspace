@@ -1,0 +1,21 @@
+
+#menu	{	
+	text-align: center;
+	margin-top: 10px;
+//	padding: 10px;
+	font-size: 18px;
+	border: 1px solid #ccc; 
+	background: #eee;
+}
+
+#menu a	{
+	color: #000;
+	text-decoration: none;
+	padding: 4px;
+}
+#menu .selected	{
+	color: #888;
+}
+#menu a:hover	{
+	color: #f80;
+}

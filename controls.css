@@ -1,0 +1,36 @@
+#globalaction {                                                                                                                                  
+    position: absolute;
+    top: 2.5px;
+    left: 679px;
+    color: #000;
+    border: 1px solid #fff;
+}
+#globalaction a {
+    color: #000;
+    margin: 5px;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+#manageraction {
+    position: fixed;
+    top: 250px;
+    left: 855px;
+    width: 137px;
+    margin: 5px;
+    color: #000;
+    background-color: white;
+    border: 1px solid __border__;
+}
+#manageraction a {
+    color: #000;
+    margin: 5px;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-decoration: none;
+}
+.youarehere {
+    margin-bottom: 20px;
+}
+ 
