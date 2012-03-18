@@ -1,3 +1,9 @@
+#globalaction {
+display: none;
+}
+#manageraction {
+display: none;
+}
 #globalaction {                                                                                                                                  
     position: absolute;
     top: 2.5px;
