@@ -32,29 +32,39 @@ strong {
 /*}}}*/
 
 /*{{{ layout */
+.std div.clearer {
+    clear: left;
+}             
+.std div.dokuwiki div.page { 
+    margin: 4px 2em 0 2em;
+    text-align: left;
+} 
 #container {
   position: relative;
   top: 0px;
   left: 0px;
   display: block;
-  width: 100%;
 
-  background: __background__ url( 'images/logo.png' ) no-repeat top right fixed;
+  background: __background__ url( 'images/logo.png' ) no-repeat top center fixed;
 
-  margin: 0;
+  width: 999px;
+  margin: 0 auto;
   padding: 0;
 } 
 
 
 #container #header {
   display: block;
+  height: 132px;
 }
 #container #header  a {
   display: block;
-  width: 100%;
-  height: 120px;
+  width: 300px;
+  height: 162px;
   z-index: 100;
   background-color: transparent;
+  float: right;
+  clear: both;
 }
 #container #header h1,
 #container #header h2 {
@@ -94,33 +104,54 @@ strong {
 #content {
   display: block;
   margin: 0em auto;
-  width: 97%;
-  max-width: 942px;
   background-color: transparent;
 }
 
 #content .sidebarng {
-    margin: 2.2em 0 0 2em;
+    margin: 2.2em 0 0 1em;
 }
-#content .toc_sidebar .toc,
-#content .sidebar_box {
+#content .toc,
+#content .sbbox {
     margin: 0em 0 0 0em;
     float: none;
-    width: 100%
-    font-size: 80%;
+    width: 100%;
     clear: both;
+}
+#content .sidebarng .sbbox {
+    font-size: 80%;
+}
+#content .sidebarng .main_sidebar {
+    padding: 0 .5em .7em .5em;
+}
+
+#content .sbhead {
+    width: 212px;
+}
+#content .sbhead .sbtoggle {
+    border: 0.4em solid white;
+    float: right;
+    display: block;
+    margin: 0.4em 3px 0 0;
+}
+#content .sbhead .close {
+    margin-top: 0;
+    border-bottom: 0.4em solid #333;
+}
+#content .sbhead .open {
+    margin-top: 0.4em;
+    border-top: 0.4em solid #333;
+}
+#content .sbhead .sbtoggle span {
+    display: none;
 }
 
 h2, h3, h4, h5,
 #content div p {
-    width: 680px;
+    width: 710px;
 }
 #content div ol,
 #content div ul {
     width: 640px;
-}
-#content .sidebar_head {
-    width: 200px;
 }
 
 #footer {
@@ -153,8 +184,8 @@ body.std {
 }
 #content #toc__inside,
 #content #toc__header,
-#content .sidebarng .sidebar_box,
-#content .sidebarng .sidebar_head {
+#content .sidebarng .sbbox,
+#content .sidebarng .sbhead {
   background-color: __background__;
   opacity:0.8;filter:Alpha(Opacity=0.8);
 }
@@ -165,7 +196,7 @@ div.dokuwiki pre {
   opacity:0.8;filter:Alpha(Opacity=0.8);
 }
 
-#content .sidebar_box {
+#content .sbbox {
     font-size: 80%;
 }
 
@@ -177,8 +208,8 @@ div.dokuwiki pre {
 #footer a:visited { 
   color: __extern__; text-decoration: none; 
 }
-#content .sidebar_box a:link,
-#content .sidebar_box a:visited,
+#content .sbbox a:link,
+#content .sbbox a:visited,
 #content div.toc a:link, 
 #content div.toc a:visited { 
   color: __extern__; text-decoration: none; 
@@ -233,7 +264,7 @@ border-bottom: dashed 1px __border__ !important;
 #container div.level5 {margin-left: 0px;}
 /*}}}*/
 /*{{{ borders n stuff */
-#content .sidebar_head {
+#content .sbhead {
     background-color: transparent;
     text-align: left;
     font-weight: bold;
@@ -244,25 +275,26 @@ border-bottom: dashed 1px __border__ !important;
     clear: both;
 }
 
-#content .sidebar_box,
+#content .sbbox,
 #content #toc__inside {
     border: none;
     border-left: 1px solid __border__;
     border-bottom: 1px solid __border__;
-    padding: 0.5em 0 0.7em 0;
+    margin-bottom: .5em;
+    padding: .5em 0 .7em 0;
 }
-#content .sidebar_head,
+#content .sbhead,
 #content .tocheader {
     border: none;
 }
-#content .sidebar_box ul {
+#content .sbbox ul {
     list-style-type: none;
     list-style-image: none;
     line-height: 1.2em;
     padding-left: 1em;
     margin: 0;
 }
-#content .sidebar_box ul li {
+#content .sbbox ul li {
     background: transparent url(http://test1.d5.notomorrow.de/lib/tpl/fnordspace/images/tocdot2.gif) 0 0.6em no-repeat;
     padding-left: 0.4em;
 }
