@@ -1,33 +1,25 @@
 <div id=header>
-<a href="/"><?php echo $INFO['title'] ?></a>
-
-<!-- topnavi {{{-->
-
-<div id="topnavi">
-<!--
-      <div class='links'>
-	<a  href="/">home</a> | 
-	<a  href="/start">start</a>
-	&nbsp;
-     </div>
-
-    <form action="" accept-charset="utf-8" class="search" id="dw__search">
-      <input type="hidden" name="do" value="search" />
-      <div id="qsearch__out" class="ajax_qsearch JSpopup"></div>
-
-      <div class="searchbox">
-	<label for="qsearch__in">search</label>
-	<input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" />
+<!-- tnav {{{-->
+    <div id="tnav">
+      <div class='useractions'><?php
+      if( isset( $INFO['userinfo']['pass'] ) && $INFO['userinfo']['pass'] ) {
+        #tpl_userinfo(); 
+        tpl_actionlink( 'profile' );
+      } else {
+        tpl_actionlink( 'register');
+      }
+      tpl_actionlink( 'login' );
+      ?></div> 
+      <div class="globalactions">
+	<?php tpl_actionlink( 'index' ); ?>
+	<?php tpl_actionlink( 'recent' ); ?>
       </div>
-    </form>
-
-     <div class="stuff">
-       <a  href="?do=index">sitemap</a> |
-       <a  href="?do=recent">recent</a> |
-       <a  href="/contact">contact</a> |
-     </div>
-     -->
-    <p class='clear' />
-</div>
+      <div class="search">
+        <?php tpl_searchform( ) ?>
+      </div>
+    </div>
 <!--}}}-->
+    <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]"')?>
+
 </div>
+ 
