@@ -1,42 +1,64 @@
-#globalaction {
-display: none;
+
+#tnav {                                                                                                                                       
+  display: block;
+  margin: 0px 10px;
+} 
+#tnav div {
+  line-height: 18px;
+  margin-right: 10px;
+  float: left;
+  opacity:0.8;filter:Alpha(Opacity=0.8);
+} 
+#tnav div.useractions {
+/*
+    float: right;
+    margin-right: 0px;
+*/
 }
-#manageraction {
-display: none;
+#tnav div.useractions,
+#tnav div.globalactions {
+  font-size: 11px;
+  background-color: #bbb;
+  border-color: #fff;
+  border-width: 2px;
+  border-style: none outset outset outset;
 }
-#globalaction {                                                                                                                                  
-    position: absolute;
-    top: 2.5px;
-    left: 679px;
-    color: #000;
-    border: 1px solid #fff;
+#tnav a:link, #tnav a:visited {
+  color: white;
+  margin: 0 5px;
+  font-size: 11px;
 }
-#globalaction a {
-    color: #000;
-    margin: 5px;
-    font-variant: small-caps;
-    font-weight: bold;
-    text-decoration: none;
+#tnav a:hover, #tnav a:active { 
+  color: white;
+  border-bottom: #bbb none 1px;
 }
- 
-#manageraction {
-    position: fixed;
-    top: 250px;
-    left: 855px;
-    width: 137px;
-    margin: 5px;
-    color: #000;
+
+#tnav #dw__search input#qsearch__in {
+    width: 236px;
+    border: none;
+    border-bottom: 1px solid #565657;
+    height: 17px;
+    font-size: 11px;
+    color: #565657;
     background-color: white;
-    border: 1px solid __border__;
+    background: url( 'images/magnifier.png' ) right 3px no-repeat;
+    margin: 2px 0;
 }
-#manageraction a {
-    color: #000;
-    margin: 5px;
-    font-variant: small-caps;
-    font-weight: bold;
-    text-decoration: none;
+#tnav #dw__search input.button {
+    display: none;
+    height: 10px;
+    width: 10px;
+    text-indent: -2000px;
+    border: none;
 }
-.youarehere {
-    margin-bottom: 20px;
-}
- 
+#tnav #qsearch__out {
+    top: 30px;
+    left: 120px;
+    background: white;
+    font-size: 12px;
+    color: #565657;
+} 
+#tnav div.actions {
+  float: left;
+  text-align: right;
+} 

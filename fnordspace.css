@@ -35,7 +35,7 @@ strong {
 .std div.clearer {
     clear: left;
 }             
-.std div.dokuwiki div.page { 
+.std div.dokuwiki { 
     margin: 4px 2em 0 2em;
     text-align: left;
 } 
@@ -45,7 +45,7 @@ strong {
   left: 0px;
   display: block;
 
-  background: __background__ url( 'images/logofull.png' ) no-repeat top center fixed;
+  background: __background__ url( 'images/logofull.png' ) no-repeat center 10px fixed;
 
   width: 999px;
   margin: 0 auto;
@@ -55,12 +55,12 @@ strong {
 
 #container #header {
   display: block;
-  height: 132px;
+  height: 143px;
 }
-#container #header  a {
+#container #header  a#dokuwiki__top {
   display: block;
   width: 300px;
-  height: 162px;
+  height: 154px;
   z-index: 100;
   background-color: transparent;
   float: right;
@@ -69,42 +69,6 @@ strong {
 #container #header h1,
 #container #header h2 {
     display: none;
-}
-
-
-
-#topnavi {
-    float: right;
-    width: 100%;
-}
-#topnavi div {
-  line-height: 25px;
-  margin-left: 10px;
-  margin-top: 20px;
-  background-color: __background__;
-}
-#topnavi div.links {
-  float: left;
-  text-align: left;
-}
-#topnavi div.searchbox {
-  float: right;
-  text-align: right;
-}
-#qsearch__out {
-    top: 30px;
-    left: 620px;
-    background: white;
-}
-#topnavi div.stuff {
-  float: right;
-  text-align: right;
-}
-
-#content {
-  display: block;
-  margin: 0em auto;
-  background-color: transparent;
 }
 
 #content .sidebarng {
@@ -124,6 +88,15 @@ strong {
     padding: 0 .5em .7em .5em;
 }
 
+#content div.toc {
+    width: 218px;
+    float: right;
+    margin: 40px 0px 20px 10px;
+}
+#content .sidebarng div.toc {
+    float: none;
+    margin: 0;
+}
 #content .sbhead {
     width: 212px;
 }
@@ -155,16 +128,20 @@ h2, h3, h4, h5,
 }
 
 #footer {
-  width: 725px;
+  width: 943px;
   display: block;
   clear: both;
-  margin: 10px;
-  padding: 5px;
+  margin: 10px auto;
+  padding: 5px 2em;
 }
 #footer .meta {
   float: right;
 }
 /*}}}*/
+
+#manageraction {
+display: none;
+}
 
 /*{{{ typo/colors*/
 body.std {
@@ -277,6 +254,10 @@ border-bottom: dashed 1px __border__ !important;
 
 #content .sbbox,
 #content #toc__inside {
+    border: none;
+}
+#content .sidebarng .sbbox,
+#content .sidebarng #toc__inside {
     border: none;
     border-left: 1px solid __border__;
     border-bottom: 1px solid __border__;
