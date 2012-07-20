@@ -1,14 +1,16 @@
 
 #tnav {                                                                                                                                       
   display: block;
-  margin: 0px 10px;
+  float: left;
+  margin: 0px .25em;
 } 
 #tnav div {
-  line-height: 18px;
   margin-right: 10px;
+  margin-top: 2px;
   float: left;
   opacity:0.8;filter:Alpha(Opacity=0.8);
 } 
+
 #tnav div.useractions {
 /*
     float: right;
@@ -18,15 +20,11 @@
 #tnav div.useractions,
 #tnav div.globalactions {
   font-size: 11px;
-  background-color: #bbb;
-  border-color: #fff;
-  border-width: 2px;
-  border-style: none outset outset outset;
 }
 #tnav a:link, #tnav a:visited {
-  color: white;
-  margin: 0 5px;
+  margin: 2px 5px;
   font-size: 11px;
+  line-height: 30px;
 }
 #tnav a:hover, #tnav a:active { 
   color: white;

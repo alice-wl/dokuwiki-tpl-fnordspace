@@ -36,7 +36,11 @@ strong {
     clear: left;
 }             
 .std div.dokuwiki { 
-    margin: 4px 2em 0 2em;
+    margin: 4px 1.0em 0 1.0em;
+    text-align: left;
+} 
+.std div.dokuwiki page { 
+    margin: 4px 1.5em 0 1.5em;
     text-align: left;
 } 
 #container {
@@ -45,7 +49,7 @@ strong {
   left: 0px;
   display: block;
 
-  background: __background__ url( 'images/logofull.png' ) no-repeat center 10px fixed;
+  background: __background__ url( 'images/logofull.png' ) no-repeat center 5px fixed;
 
   width: 999px;
   margin: 0 auto;
@@ -55,77 +59,37 @@ strong {
 
 #container #header {
   display: block;
-  height: 143px;
+  height: 148px;
 }
 #container #header  a#dokuwiki__top {
   display: block;
   width: 300px;
-  height: 154px;
+  height: 150px;
   z-index: 100;
   background-color: transparent;
   float: right;
   clear: both;
+  border: none;
+  text-indent: -99999px;
 }
+
 #container #header h1,
 #container #header h2 {
     display: none;
 }
 
-#content .sidebarng {
-    margin: 2.2em 0 0 1em;
-}
-#content .toc,
-#content .sbbox {
-    margin: 0em 0 0 0em;
-    float: none;
-    width: 100%;
-    clear: both;
-}
-#content .sidebarng .sbbox {
-    font-size: 80%;
-}
-#content .sidebarng .main_sidebar {
-    padding: 0 .5em .7em .5em;
-}
 
-#content div.toc {
-    width: 218px;
-    float: right;
-    margin: 40px 0px 20px 10px;
-}
-#content .sidebarng div.toc {
-    float: none;
-    margin: 0;
-}
-#content .sbhead {
-    width: 212px;
-}
-#content .sbhead .sbtoggle {
-    border: 0.4em solid white;
-    float: right;
-    display: block;
-    margin: 0.4em 3px 0 0;
-}
-#content .sbhead .close {
-    margin-top: 0;
-    border-bottom: 0.4em solid #333;
-}
-#content .sbhead .open {
-    margin-top: 0.4em;
-    border-top: 0.4em solid #333;
-}
-#content .sbhead .sbtoggle span {
-    display: none;
-}
-
+/*
 h2, h3, h4, h5,
 #content div p {
-    width: 710px;
+    width: 910px;
 }
-#content div ol,
-#content div ul {
-    width: 640px;
+#content div.li,
+#content div.li {
+    width: 840px;
 }
+*/
+
 
 #footer {
   width: 943px;
@@ -228,7 +192,10 @@ border-bottom: dashed 1px __border__ !important;
     color: __text__;
     padding: 2px 0 0 0;
     clear: left;
-  margin: 1.5em 0em 1em 0;
+  margin: 1.0em 0em 1em 0;
+}
+#container h1 {
+  margin-top: 1.5em;
 }
 #container pre {
   line-height: 1em;
@@ -267,17 +234,6 @@ border-bottom: dashed 1px __border__ !important;
 #content .sbhead,
 #content .tocheader {
     border: none;
-}
-#content .sbbox ul {
-    list-style-type: none;
-    list-style-image: none;
-    line-height: 1.2em;
-    padding-left: 1em;
-    margin: 0;
-}
-#content .sbbox ul li {
-    background: transparent url(http://test1.d5.notomorrow.de/lib/tpl/fnordspace/images/tocdot2.gif) 0 0.6em no-repeat;
-    padding-left: 0.4em;
 }
 #container pre {
     border: none;
