@@ -73,6 +73,23 @@ strong {
   text-indent: -99999px;
 }
 
+#menu {
+    display: block;
+    float: left;
+    width: 68%;
+    margin: 123px 0 0em 1em;
+}
+#menu p a {
+    opacity:0.8;filter:Alpha(Opacity=0.8);
+    background-color: transparent;
+    text-align: left;
+    font-weight: bold;
+    padding: 3px;
+    margin: 0 2px 0 0;
+    font-size: 80%;
+}
+
+
 #container #header h1,
 #container #header h2 {
     display: none;
