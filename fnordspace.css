@@ -73,6 +73,10 @@ strong {
 }
 #menu p {
   background-color: __background_other__;
+  border-radius:        5px;
+  -moz-border-radius:   5px;
+  -webkit-border-radius:5px;
+  -khtml-border-radius: 5px;
 }
 
 #menu {
@@ -127,11 +131,12 @@ body.std {
     opacity:0.8;filter:Alpha(Opacity=0.8);
     text-align: left;
     font-weight: bold;
-    padding: 3px;
+    padding: 3px 1px 3px 5px;
     margin: 0 2px 0 0;
     font-size: 80%;
     border-bottom: none;
     text-transform: capitalize;
+    border-left: 1px #fff outset;
 
 }
 #menu p a:hover,
@@ -162,6 +167,9 @@ div.dokuwiki pre {
 #container a:visited { 
   color: __extern__; text-decoration: none; 
   border-bottom: 1px solid __border__;
+}
+#container a.media {
+    border: none;
 }
 #content .sbbox a:link,
 #content .sbbox a:visited,
