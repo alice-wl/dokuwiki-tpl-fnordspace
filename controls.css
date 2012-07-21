@@ -27,8 +27,7 @@
   line-height: 30px;
 }
 #tnav a:hover, #tnav a:active { 
-  color: white;
-  border-bottom: #bbb none 1px;
+  border-bottom: __border__ solid 1px;
 }
 
 #tnav #dw__search input#qsearch__in {
