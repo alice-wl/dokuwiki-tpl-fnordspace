@@ -180,6 +180,8 @@ div.dokuwiki pre {
   border-bottom: none;
 }
 #content .sbbox a:hover,
+#content .sbbox a:active,
+#content div.toc a:hover,
 #content div.toc a:active {
   text-decoration: underline;
 }
