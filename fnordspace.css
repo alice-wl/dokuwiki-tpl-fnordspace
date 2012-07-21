@@ -295,7 +295,7 @@ border-bottom: dashed 1px __border__ !important;
 }
 #content form textarea {
     border: none;
-    background: #eee;
+    background: __background_alt__;
     height: 217px; width: 336px;
 }
 #container input.edit, 
