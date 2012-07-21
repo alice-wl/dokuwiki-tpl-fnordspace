@@ -25,9 +25,10 @@
   margin: 2px 5px;
   font-size: 11px;
   line-height: 30px;
+  border-bottom: none;
 }
 #tnav a:hover, #tnav a:active { 
-  border-bottom: __border__ solid 1px;
+    text-decoration: underline;
 }
 
 #tnav #dw__search input#qsearch__in {
