@@ -59,7 +59,6 @@ strong {
 
 #container #header {
   display: block;
-  height: 148px;
 }
 #container #header  a#dokuwiki__top {
   display: block;
@@ -76,8 +75,13 @@ strong {
 #menu {
     display: block;
     float: left;
+    width: 65%;
     margin: 123px 0 0em 1em;
-    background-color: #f5f5f5;
+}
+#menu p {
+    display: block;
+    float: left;
+    background-color: __background_other__;
 }
 #container #menu p a {
     opacity:0.8;filter:Alpha(Opacity=0.8);
@@ -87,6 +91,8 @@ strong {
     margin: 0 2px 0 0;
     font-size: 80%;
     border-bottom: none;
+    text-transform: capitalize;
+
 }
 #menu p a:hover,
 #menu p a:active {
@@ -215,7 +221,7 @@ border-bottom: dashed 1px __border__ !important;
   margin: 1.0em 0em 1em 0;
 }
 #container h1 {
-  margin-top: 1.5em;
+  margin-top: .5em;
 }
 #container pre {
   line-height: 1em;
@@ -254,6 +260,12 @@ border-bottom: dashed 1px __border__ !important;
 #content .sbhead,
 #content .tocheader {
     border: none;
+}
+#content .sbhead a:active,
+#content .tocheader a:active,
+#content .sbhead a:hover,
+#content .tocheader a:hover {
+    text-decoration: underline;
 }
 #container pre {
     border: none;
