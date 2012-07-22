@@ -32,37 +32,26 @@ strong {
 /*}}}*/
 
 /*{{{ layout */
-.std div.clearer {
+#container div.clearer {
     clear: left;
 }             
-.std div.dokuwiki { 
-    margin: 4px 1.0em 0 1.0em;
-    text-align: left;
-} 
-.std div.dokuwiki page { 
-    margin: 4px 1.5em 0 1.5em;
-    text-align: left;
-} 
+
 #container {
+  display: block;
   position: relative;
   top: 0px;
   left: 0px;
-  display: block;
 
-  background: __background__ url( 'images/logofull.png' ) no-repeat center 5px fixed;
+  background: __background__ url( 'images/logofull.png' ) no-repeat center 0px fixed;
 
   width: 999px;
   margin: 0 auto;
   padding: 0;
 } 
 
-
-#container #header {
+#header a#dokuwiki__top {
   display: block;
-}
-#container #header  a#dokuwiki__top {
-  display: block;
-  width: 300px;
+  width: 244px;
   height: 150px;
   z-index: 100;
   background-color: transparent;
@@ -71,24 +60,11 @@ strong {
   border: none;
   text-indent: -99999px;
 }
-#menu p {
-  background-color: __background_other__;
-  border-radius:        5px;
-  -moz-border-radius:   5px;
-  -webkit-border-radius:5px;
-  -khtml-border-radius: 5px;
-}
 
-#menu {
-    display: block;
-    float: left;
-    width: 65%;
-    margin: 123px 0 0em 1em;
-}
-#menu p {
-    display: block;
-    float: left;
-}
+#content { 
+    margin: 0px 1.0em 0 1.0em;
+    text-align: left;
+} 
 
 #footer {
   width: 943px;
@@ -106,51 +82,15 @@ strong {
 }
 /*}}}*/
 
-#manageraction {
-display: none;
-}
-
 /*{{{ typo/colors*/
 body.std {
   font-size: .9em;  
   font-family: helvetica, arial, Sans-Serif;  	
-  /*
-  font-family: Verdana, Sans-Serif;  	
-  font-size: 12px;  
-  font-family:Arial,sans-serif;
-  */
-
-  margin: 0 0px;
-
   background-color: __background__;
   color: __text__;
   line-height: 1.5em;
 }
 
-#container #menu p a {
-    opacity:0.8;filter:Alpha(Opacity=0.8);
-    text-align: left;
-    font-weight: bold;
-    padding: 3px 1px 3px 5px;
-    margin: 0 2px 0 0;
-    font-size: 80%;
-    border-bottom: none;
-    text-transform: capitalize;
-    border-left: 1px #fff outset;
-
-}
-#menu p a:hover,
-#menu p a:active {
-    text-decoration: underline;
-}
-
-#content #toc__inside,
-#content #toc__header,
-#content .sidebarng .sbbox,
-#content .sidebarng .sbhead {
-  background-color: __background__;
-  opacity:0.8;filter:Alpha(Opacity=0.8);
-}
 #content img {
   opacity:1;filter:Alpha(Opacity=1);
 }
@@ -159,14 +99,16 @@ div.dokuwiki pre {
   opacity:0.8;filter:Alpha(Opacity=0.8);
 }
 
-#content .sbbox {
-    font-size: 80%;
-}
-
 #container a:link, 
 #container a:visited { 
   color: __extern__; text-decoration: none; 
   border-bottom: 1px solid __border__;
+}
+
+#content #toc__inside,
+#content #toc__header {
+  background-color: __background__;
+  opacity:0.8;filter:Alpha(Opacity=0.8);
 }
 #container a.media {
     border: none;
@@ -175,7 +117,6 @@ div.dokuwiki pre {
 #content .sbbox a:visited,
 #content div.toc a:link, 
 #content div.toc a:visited { 
-  color: __extern__; 
   text-decoration: none; 
   border-bottom: none;
 }
@@ -185,39 +126,50 @@ div.dokuwiki pre {
 #content div.toc a:active {
   text-decoration: underline;
 }
+#content .sbhead a:active,
+#content .tocheader a:active,
+#content .sbhead a:hover,
+#content .tocheader a:hover {
+    text-decoration: underline;
+}
+#menu p a:hover,
+#menu p a:active {
+    text-decoration: underline;
+}
 #content a.wikilink2 {
 text-decoration: none !important;
 border-bottom: dashed 1px __border__ !important;
-}
-#container h1 { line-height: normal; font-size: 160%; padding: 0; clear: none !important; }
-#container h2 { line-height: normal; font-size: 140%; padding: 0; clear: none !important; }
-#container h3 { line-height: normal; font-size: 130%; padding: 0; clear: none !important; }
-#container h4 { line-height: normal; font-size: 115%; padding: 0; clear: none !important; }
-#container h5 { line-height: normal; font-size: 100%; padding: 0; clear: none !important; font-weight: bold; }
-#container h1 a, body.std div.text h2 a, body.std div.text h3 a, body.std div.text h4 a, body.std div.text h5 a,
-#container a.nolink {
-  color: __text__;
-  text-decoration: none;
-  font-weight: normal;
-}
-#container h1,
-#container h2 {
-    border-bottom: 1px dotted __border__;
-    clear: left;
 }
 #container h1,
 #container h2,
 #container h3,
 #container h4,
 #container h5 {
+    clear: none !important;
+    padding: 0;
+    margin: 1.0em 0em 1em 0;
     color: __text__;
-    padding: 2px 0 0 0;
+}
+#container h1 a, 
+#container h2 a, 
+#container h3 a, 
+#container h4 a, 
+#container h5 a,
+#container a.nolink {
+  font-weight: normal;
+}
+
+#container h1,
+#container h2 {
+    border-bottom: 1px dotted __border__;
     clear: left;
-  margin: 1.0em 0em 1em 0;
 }
-#container h1 {
-  margin-top: .5em;
-}
+#container h1 { line-height: normal; font-size: 160%; margin-top: .5em; }
+#container h2 { line-height: normal; font-size: 140%; }
+#container h3 { line-height: normal; font-size: 130%; }
+#container h4 { line-height: normal; font-size: 115%; }
+#container h5 { line-height: normal; font-size: 100%; font-weight: bold; }
+
 #container pre {
   line-height: 1em;
 }
@@ -240,28 +192,6 @@ border-bottom: dashed 1px __border__ !important;
     clear: both;
 }
 
-#content .sbbox,
-#content #toc__inside {
-    border: none;
-}
-#content .sidebarng .sbbox,
-#content .sidebarng #toc__inside {
-    border: none;
-    border-left: 1px solid __border__;
-    border-bottom: 1px solid __border__;
-    margin-bottom: .5em;
-    padding: .5em 0 .7em 0;
-}
-#content .sbhead,
-#content .tocheader {
-    border: none;
-}
-#content .sbhead a:active,
-#content .tocheader a:active,
-#content .sbhead a:hover,
-#content .tocheader a:hover {
-    text-decoration: underline;
-}
 #container pre {
     border: none;
 }
@@ -283,9 +213,16 @@ border-bottom: dashed 1px __border__ !important;
   padding: 3px;
   border: 1px solid __border__;
 }          
+#container #menu p a {
+    border-bottom: none;
+    border-left: 1px #fff outset;
+}
+#container #menu #control p a {
+    border-right: 3px inset __background_other__;
+}
 
 /*}}}*/
-/*{{{ bottons */
+/*{{{ buttons */
 #content form table input[type=checkbox] {
     background: none;
 }
@@ -331,3 +268,4 @@ border-bottom: dashed 1px __border__ !important;
     background-color: red;
 }
 /*}}}*/
+
