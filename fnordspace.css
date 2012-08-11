@@ -104,6 +104,9 @@ div.dokuwiki pre {
   color: __extern__; text-decoration: none; 
   border-bottom: 1px solid __border__;
 }
+#footer a:visited { 
+  color: __extern__; text-decoration: none; 
+}
 
 #content #toc__inside,
 #content #toc__header {
