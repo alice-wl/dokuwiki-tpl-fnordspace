@@ -1,9 +1,6 @@
-
 #tnav {                                                                                                                                       
   display: block;
-  float: left;
-  margin: 0px .25em;
-} 
+  float: left; margin: 0px .25em; } 
 #tnav div {
   margin-right: 10px;
   margin-top: 2px;
@@ -11,12 +8,6 @@
   opacity:0.8;filter:Alpha(Opacity=0.8);
 } 
 
-#tnav div.useractions {
-/*
-    float: right;
-    margin-right: 0px;
-*/
-}
 #tnav div.useractions,
 #tnav div.globalactions {
   font-size: 11px;
@@ -25,9 +16,10 @@
   margin: 2px 5px;
   font-size: 11px;
   line-height: 30px;
+  border-bottom: none;
 }
 #tnav a:hover, #tnav a:active { 
-  border-bottom: __border__ solid 1px;
+    text-decoration: underline;
 }
 
 #tnav #dw__search input#qsearch__in {
@@ -59,3 +51,48 @@
   float: left;
   text-align: right;
 } 
+
+
+
+#container #menu p a {
+  padding: 3px 1px 3px 5px;
+  font-size: 80%;
+  text-transform: capitalize;
+}
+#container #menu #control p a {
+  font-size: 95%;
+}
+#menu {
+    display: block;
+    float: left;
+    width: 74%;
+    margin: 123px 0 0em 1em;
+}
+#menu p {
+  display: block;
+  float: left;
+  background-color: __background_other__;
+  border-radius:        5px;
+  -moz-border-radius:   5px;
+  -webkit-border-radius:5px;
+  -khtml-border-radius: 5px;
+}
+
+#menu #control {
+    float: right;
+    position: relative;
+    top: 1em;
+    left: 7px;
+    font-weight: bold;
+}
+#menu #control p {
+  border: 3px solid __background_other__;
+  background: __background__;
+}
+#container #menu p a {
+    opacity:0.8;filter:Alpha(Opacity=0.8);
+    text-align: left;
+    font-weight: bold;
+    margin: 0 2px 0 0;
+}
+
