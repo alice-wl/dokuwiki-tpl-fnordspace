@@ -26,7 +26,15 @@ if (!defined('DOKU_INC')) die();
 
 <div id='content' class='dokuwiki'>
 
-<?php tpl_content( 1 )?>
+<div class="sidebarng right_sidebar">
+<?php
+ $sb =& plugin_load('action', 'sidebarng');
+ $sb->p_sidebar( 'right' );
+?>
+</div
+<div class="pageng">
+
+<?php tpl_content( 0 )?>
 
 <p class='clear' />
 </div>
